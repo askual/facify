@@ -1,4 +1,4 @@
-# FaceApp PHP API
+# Facify
  
 Transform your face using Artificial Intelligence with PHP [FaceApp](http://faceapp.com) API <br>
 FaceApp is an [Android](https://play.google.com/store/apps/details?id=io.faceapp) and [iOS](https://itunes.apple.com/app/id1180884341) application.<br>
@@ -15,31 +15,13 @@ This library is an unofficial wrapper to their AI system.<br>
 ## Basic usage
 
 ```php
-<?php
-require('FaceApp/faceapp.php');
-try {
-    $FaceApp = new FaceApp('test/image.jpg');
-
-    $photoCode = $FaceApp->getPhotoCode();
-
-    //to get all available filters use : $FaceApp->getFilters();
-
-    $filter = 'old';
-
-    $FaceApp->applyFilter($photoCode, $filter, false);
-
-    if ($FaceApp->savePhoto('newImage.jpg')) {
-        echo "Done!";
-    }
-} catch (Exception $e) {
-    exit($e->getMessage());
-}
+	composer require askual/facify
 ```
 
 ## Methods
 
 ```php
-$FaceApp = new FaceApp('PHOTO_PATH');
+$FaceApp = new Facify('PHOTO_PATH');
 ```
 
 ### getPhotoCode
@@ -112,24 +94,8 @@ Take a look at "ProxyMode.php"
 
 ## License
 
-`Faceapp PHP API` is licensed under the MIT License - see the LICENSE file for details
+`Facify` is licensed under the MIT License - see the LICENSE file for details
 
-## Description
 
-Of course it is not a perfect and optimized project but u can develop it easily and improve it even better than me 😄❤
 
-if there is any question or problem contact me in Telegram [@SubString](http://t.me/SubString) or report it in issues.<br>
-Enjoy!
-
-### -For my countrymen
-<div dir="rtl" align="right">
-سلام هموطن عزیز <br>
-اصلی ترین دلیل و هدفی که از اوپن کردن این سورس داشتم، افزایش دانش عمومی بوده و هست<br>
-و خوشحالم که میتونم با این کار به شما و دیگران کمک کنم،<br>
-و چه خوب میشه یاد بگیریم به هم دیگه کمک کنیم<br>
-و این فرهنگ (اوپن سورس بودن پروژه ها) رو توی کشور خودمون یعنی ایران جا بندازیم<br>
-و در حد توانمون قانون کپی رایت و حقوق ناشر رو رعایت کنیم.<br>
- 
-</div>
-
-<a href="http://FeeltheCode.com">FeeltheCode.com</a>
+<a href="http://askual.com">Askual.com</a>

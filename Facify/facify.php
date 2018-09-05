@@ -1,12 +1,7 @@
 <?php
-/**
- * Created by PhpStorm.
- * User: Nariman
- * Date: 17/03/2018
- * Time: 10:17 AM
- */
 
-class FaceApp
+
+class Facify
 {
     private
         $default_api_host = 'https://ph-x.faceapp.io/api/v2.11/photos',
