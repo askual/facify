@@ -1,0 +1,13 @@
+{
+    "name": "askual/facify",
+    "description": "FaceApp PHP API wrapper",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "deqiq",
+            "email": "kibdemta@gmail.com"
+        }
+    ],
+    "require": {}
+}
