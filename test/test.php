@@ -1,7 +1,10 @@
-<?php
-require('FaceApp/faceapp.php');
+<?php 
+require_once __DIR__ . '/../vendor/autoload.php'; // Autoload files using Composer autoload
+
+use Askual\Facify;
+
 try {
-    $FaceApp = new FaceApp(__DIR__.'/test/image.jpg');
+    $FaceApp = new Facify(__DIR__.'/image.jpg');
 
     $photoCode = $FaceApp->getPhotoCode();
 

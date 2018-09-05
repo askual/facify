@@ -14,7 +14,8 @@
     },
     "autoload": {
         "psr-0" : {
-            "Askual\\Facify" : "src"
+            "Askual\\Facify" : "src/"
         }
-    }
+    },
+    "minimum-stability": "dev"
 }

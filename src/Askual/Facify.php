@@ -1,4 +1,5 @@
 <?php
+namespace Askual;
 
 
 class Facify
@@ -117,7 +118,7 @@ class Facify
         $filters = array_map(function ($array) {
             return $array[0];
         }, $this->PhotoOptions->filters);
-        if (!in_array($filter, $filters)) throw new Exception('Filter Not Found!');
+        if (!in_array($filter, $filters)) throw new \Exception('Filter Not Found!');
         $arraykey = array_search($filter, $filters);
 
         if ($crop == false && $this->PhotoOptions->filters[$arraykey][1] == true)
